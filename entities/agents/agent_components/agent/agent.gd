@@ -6,8 +6,8 @@ extends Node
 @export var agent_sprite: Texture2D
 
 @export_group("Agent Components")
-@export var agent_interpretation_strategy: AgentInterpretationStrategy
 @export var agent_arrival_command: AgentArrivalCommand
+@export var agent_interpretation_command: AgentInterpretationCommand
 @export var agent_action_command: AgentActionCommand
 # TODO: Add other components like Sprite2D
 

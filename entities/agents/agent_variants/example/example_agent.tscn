@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b3att2moilid5" path="res://entities/agents/agent_components/agent/agent.gd" id="1_dip1g"]
 [ext_resource type="Script" uid="uid://b1n06co6ty6b2" path="res://entities/agents/agent_components/agent_action/base_action/agent_action_command.gd" id="2_qyb7m"]
-[ext_resource type="Script" uid="uid://bmlc2u3sroxl0" path="res://entities/agents/agent_components/agent_interpretation/base_interpretation/agent_interpretation_strategy.gd" id="3_rbpf0"]
+[ext_resource type="Script" uid="uid://bmlc2u3sroxl0" path="res://entities/agents/agent_components/agent_interpretation/base_interpretation/agent_interpretation_command.gd" id="3_rbpf0"]
 
 [node name="ExampleAgent" type="Node" node_paths=PackedStringArray("agent_interpretation_strategy", "agent_action_command")]
 script = ExtResource("1_dip1g")
