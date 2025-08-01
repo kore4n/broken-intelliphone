@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cugnrs1kpewnb"]
+
+[ext_resource type="Script" uid="uid://b3att2moilid5" path="res://entities/agents/agent_components/agent/agent.gd" id="1_h7gvn"]
+[ext_resource type="Script" uid="uid://b1n06co6ty6b2" path="res://entities/agents/agent_components/agent_action/base_action/agent_action_command.gd" id="2_hplo4"]
+[ext_resource type="Script" uid="uid://bmlc2u3sroxl0" path="res://entities/agents/agent_components/agent_interpretation/base_interpretation/agent_interpretation_strategy.gd" id="3_uqex6"]
+[ext_resource type="Script" uid="uid://cytgg3qgawb01" path="res://entities/agents/agent_components/agent_arrival/base_arrival/agent_arrival_command.gd" id="4_uqex6"]
+
+[node name="FieldAgent" type="Node" node_paths=PackedStringArray("agent_interpretation_strategy", "agent_action_command")]
+script = ExtResource("1_h7gvn")
+agent_name = null
+is_alive = null
+agent_interpretation_strategy = NodePath("AgentInterpretationStrategy")
+agent_action_command = NodePath("AgentActionCommand")
+metadata/_custom_type_script = "uid://b3att2moilid5"
+
+[node name="AgentActionCommand" type="Node" parent="."]
+script = ExtResource("2_hplo4")
+metadata/_custom_type_script = "uid://b1n06co6ty6b2"
+
+[node name="AgentInterpretationStrategy" type="Node" parent="."]
+script = ExtResource("3_uqex6")
+metadata/_custom_type_script = "uid://bmlc2u3sroxl0"
+
+[node name="AgentArrivalCommand" type="Node" parent="."]
+script = ExtResource("4_uqex6")
+metadata/_custom_type_script = "uid://cytgg3qgawb01"

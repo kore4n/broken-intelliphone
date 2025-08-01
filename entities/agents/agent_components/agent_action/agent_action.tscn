@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3h8f24t8weys"]
-
-[ext_resource type="Script" uid="uid://b1n06co6ty6b2" path="res://entities/agents/agent_components/agent_action/agent_action_command.gd" id="1_4nyd8"]
-
-[node name="AgentAction" type="Node"]
-script = ExtResource("1_4nyd8")
