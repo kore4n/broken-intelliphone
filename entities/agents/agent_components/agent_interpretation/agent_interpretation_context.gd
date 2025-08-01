@@ -1,0 +1,2 @@
+class_name AgentInterpretationContext
+extends Node
