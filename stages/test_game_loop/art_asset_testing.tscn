@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh578u8io3vwt"]
+
+[ext_resource type="Script" uid="uid://ctncg0pwxy7j2" path="res://common/game_loop_manager/game_loop_manager.gd" id="1_5u0wm"]
+[ext_resource type="Texture2D" uid="uid://du40ubq6j7plr" path="res://assets/agents/detective.png" id="2_520w7"]
+
+[node name="GameLoop" type="Node2D"]
+
+[node name="GameLoopManager" type="Node" parent="."]
+script = ExtResource("1_5u0wm")
+metadata/_custom_type_script = "uid://ctncg0pwxy7j2"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_520w7")
