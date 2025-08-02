@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bmh04cc1y5iwj"]
 
-[ext_resource type="Script" uid="uid://ctncg0pwxy7j2" path="res://common/game_loop_manager/game_loop_manager.gd" id="1_p0dg8"]
+[ext_resource type="Script" uid="uid://ctncg0pwxy7j2" path="res://autoloads/game_loop_manager/game_loop_manager.gd" id="1_p0dg8"]
 
 [node name="GameLoop" type="Node2D"]
 

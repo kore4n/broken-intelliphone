@@ -14,6 +14,10 @@ config/name="broken-intelliphone"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameLoopManager="*res://autoloads/game_loop_manager/game_loop_manager.gd"
+
 [file_customization]
 
 folder_colors={
