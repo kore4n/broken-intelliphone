@@ -34,7 +34,6 @@ func calculate_shuffled_intelligence(agent_index: int, intelligence_input: Strin
 	var first_sub_array = intelligence_words_list.slice(0, agent_index)
 	var second_sub_array = intelligence_words_list.slice(agent_index + 1, len(intelligence_words_list))
 	var calculated_intelligence_output: String = " ".join(first_sub_array + [shuffled_word] + second_sub_array)
-	print('shuffled word:', shuffled_word)
 	return calculated_intelligence_output
 
 func array_to_string(arr: Array) -> String:

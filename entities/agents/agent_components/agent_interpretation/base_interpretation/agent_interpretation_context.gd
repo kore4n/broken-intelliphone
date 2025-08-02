@@ -7,4 +7,3 @@ extends Resource
 # The agent that executing this command
 var owner_agent: Agent
 var intelligence_input: String
-#var intelligence_output: String
