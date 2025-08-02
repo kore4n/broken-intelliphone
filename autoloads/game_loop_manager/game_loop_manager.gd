@@ -1,4 +1,3 @@
-class_name GameLoopManager
 extends Node
 
 var beginning_intelligence: String
@@ -9,7 +8,6 @@ var agents: Array[Agent]
 # (i.e.) kill some agents...
 func execute_arrival_commands():
 	var agent_arrival_context: AgentArrivalContext = AgentArrivalContext.new()
-	print(agent_arrival_context.)
 	for agent in agents:
 		agent.agent_arrival_command.execute(agent_arrival_context)
 

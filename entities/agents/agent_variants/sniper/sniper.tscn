@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://sqs5br18ocnt"]
+
+[ext_resource type="Script" uid="uid://b3att2moilid5" path="res://entities/agents/agent_components/agent/agent.gd" id="1_ys0p6"]
+[ext_resource type="Script" uid="uid://3mel3cvmlc7e" path="res://entities/agents/agent_components/agent_arrival/arrival_variants/kill_first_reporter_arrival.gd" id="2_uaxvf"]
+[ext_resource type="Script" uid="uid://boqjxgmij0xbx" path="res://entities/agents/agent_components/agent_interpretation/interpretation_variants/scrambler_interpretation.gd" id="3_0eri2"]
+[ext_resource type="Script" uid="uid://dupbn0lddd342" path="res://entities/agents/agent_components/agent_action/action_variants/null_action_command.gd" id="4_x78xh"]
+
+[node name="Sniper" type="Node" node_paths=PackedStringArray("agent_arrival_command", "agent_interpretation_command", "agent_action_command")]
+script = ExtResource("1_ys0p6")
+agent_name = "Sniper"
+agent_arrival_command = NodePath("KillFirstReporterArrival")
+agent_interpretation_command = NodePath("ScramblerInterpretation")
+agent_action_command = NodePath("NullActionCommand")
+metadata/_custom_type_script = "uid://b3att2moilid5"
+
+[node name="KillFirstReporterArrival" type="Node" parent="."]
+script = ExtResource("2_uaxvf")
+metadata/_custom_type_script = "uid://3mel3cvmlc7e"
+
+[node name="ScramblerInterpretation" type="Node" parent="."]
+script = ExtResource("3_0eri2")
+metadata/_custom_type_script = "uid://boqjxgmij0xbx"
+
+[node name="NullActionCommand" type="Node" parent="."]
+script = ExtResource("4_x78xh")
+metadata/_custom_type_script = "uid://dupbn0lddd342"

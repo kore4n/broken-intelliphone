@@ -7,5 +7,5 @@ extends Node
 var report: String
 
 # Return the would-be passed intelligence
-func execute(agent_interpretation_context: AgentInterpretationContext):
-	pass
+func execute(agent_interpretation_context: AgentInterpretationContext) -> String:
+	return ''
