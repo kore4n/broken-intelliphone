@@ -1,2 +1,2 @@
 class_name AgentActionContext
-extends Node
+extends Resource

@@ -2,7 +2,6 @@ class_name Agent
 extends Node
 
 @export var agent_name: String
-@export var is_alive: bool = true
 @export var agent_sprite: Texture2D
 
 @export_group("Agent Components")
@@ -13,6 +12,7 @@ extends Node
 
 var intelligence_input: String
 var intelligence_output: String
+var is_alive: bool = true
 
 func report():
 	if !is_alive:
