@@ -17,6 +17,8 @@ config/icon="res://icon.svg"
 [file_customization]
 
 folder_colors={
+"res://assets/": "pink",
+"res://assets/agents/": "pink",
 "res://autoloads/": "red",
 "res://common/": "orange",
 "res://entities/": "yellow",
